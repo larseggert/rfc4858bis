@@ -15,12 +15,12 @@ v: 3
 #  - unicorn
 #  - sparkling distributed ledger
 venue:
-  # group: WG
-  # type: Working Group
-  # mail: WG@example.com
-  # arch: https://example.com/WG
-  github: larseggert/rfc4858bis
-  # latest: https://example.com/LATEST
+#  group: WG
+#  type: Working Group
+#  mail: WG@example.com
+#  arch: https://example.com/WG
+  github: "larseggert/rfc4858bis"
+  latest: "https://larseggert.github.io/rfc4858bis/draft-kumari-rfc4858bis.html"
 
 author:
  -
