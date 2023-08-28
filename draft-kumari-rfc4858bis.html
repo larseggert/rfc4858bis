@@ -9,7 +9,13 @@
 <meta content="Allison Mankin" name="author">
 <meta content="Lars Eggert" name="author">
 <meta content="
-       TODO Abstract 
+       This document describes methodologies that have been designed to
+improve and facilitate IETF document flow processing.  It specifies a
+set of procedures under which a working group chair or secretary
+serves as the primary Document Shepherd for a document that has been
+submitted to the IESG for publication.  Before this, the Area
+Director responsible for the working group has traditionally filled
+the shepherding role. 
     " name="description">
 <meta content="xml2rfc 3.18.0" name="generator">
 <meta content="draft-kumari-rfc4858bis-latest" name="ietf.draft">
@@ -1091,7 +1097,13 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Document Shepherding from Working Group Last Call to Publication</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">TODO Abstract<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">This document describes methodologies that have been designed to
+improve and facilitate IETF document flow processing.  It specifies a
+set of procedures under which a working group chair or secretary
+serves as the primary Document Shepherd for a document that has been
+submitted to the IESG for publication.  Before this, the Area
+Director responsible for the working group has traditionally filled
+the shepherding role.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1156,39 +1168,120 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.1.1" class="keepWithNext"><a href="#section-1" class="auto internal xref">1</a>.  <a href="#name-introduction" class="internal xref">Introduction</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2">
-            <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-conventions-and-definitions" class="internal xref">Conventions and Definitions</a></p>
+            <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-terminology" class="internal xref">Terminology</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-process-description" class="internal xref">Process Description</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
+                <p id="section-toc.1-1.3.2.1.1" class="keepWithNext"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-document-shepherd-write-up" class="internal xref">Document Shepherd Write-Up</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
+                <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-document-shepherding-during" class="internal xref">Document Shepherding during AD Evaluation</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
+                <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-document-shepherding-during-" class="internal xref">Document Shepherding during IESG Evaluation</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-shepherding-the-documents-i" class="internal xref">Shepherding the Document's IANA Actions</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-document-shepherding-after-" class="internal xref">Document Shepherding after IESG Approval</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-when-not-to-use-the-documen" class="internal xref">When Not to Use the Document Shepherding Process</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
+            <p id="section-toc.1-1.9.1"><a href="#section-9" class="auto internal xref">9</a>.  <a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
+            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-references" class="internal xref">References</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10.2.1">
+                <p id="section-toc.1-1.10.2.1.1"><a href="#section-10.1" class="auto internal xref">10.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10.2.2">
+                <p id="section-toc.1-1.10.2.2.1"><a href="#section-10.2" class="auto internal xref">10.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+</li>
+            </ul>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
+            <p id="section-toc.1-1.11.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-example-document-announceme" class="internal xref">Example Document Announcement Write-Ups</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11.2.1">
+                <p id="section-toc.1-1.11.2.1.1"><a href="#appendix-A.1" class="auto internal xref">A.1</a>.  <a href="#name-example-document-announcemen" class="internal xref">Example Document Announcement Write-Up for draft-ietf-avt-rtp-midi-format</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11.2.2">
+                <p id="section-toc.1-1.11.2.2.1"><a href="#appendix-A.2" class="auto internal xref">A.2</a>.  <a href="#name-example-document-announcement" class="internal xref">Example Document Announcement Write-Up for draft-ietf-imss-ip-over-fibre-channel</a></p>
+</li>
+            </ul>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
+            <p id="section-toc.1-1.12.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
 </section>
 </div>
-<div id="introduction">
+<div id="sect-1">
 <section id="section-1">
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">TODO Introduction<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-1">Early in 2004, the IESG undertook several experiments aimed at
+evaluating whether any of the proposed changes to the IETF document
+flow process would yield qualitative improvements in document
+throughput and quality.  One such experiment, referred to as the
+"PROTO process" or "PROTO" (because it was created by the "PROcess and TOols"
+or PROTO <span>[<a href="#PROTO" class="cite xref">PROTO</a>]</span> team), is a set of methodologies designed
+to involve working group chairs or secretaries more directly in their
+documents' approval life cycle.  In particular, the PROTO team
+focused on improvements to the part of a document's life cycle that
+occurs after the working group and document editor have forwarded it
+to the IESG for publication.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">By the end of 2004, the IESG had evaluated the utility of the PROTO
+methodologies based on data obtained through several pilot projects
+that had run throughout the year, and subsequently decided to adopt
+the PROTO process for all documents and working groups.  This
+document describes this process.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">The methodologies developed and piloted by the PROTO team focus on
+the working group chair or secretary as the primary Document
+Shepherd.  The primary objective of this document shepherding process
+is to improve document-processing throughput and document quality by
+enabling a partnership between the Responsible Area Director and the
+Document Shepherd.  In particular, this partnership has the explicit
+goal of enfranchising the Document Shepherd while at the same time
+offloading a specific part of the follow-up work that has
+traditionally been responsibility of the Responsible Area Director.
+The Responsible Area Director has tens or many tens of documents to
+follow, while the Document Shepherd has only a few at a time.
+Flowing the responsibility to the working group level can ensure more
+attention and more timely response.<a href="#section-1-3" class="pilcrow">¶</a></p>
+<p id="section-1-4">Consequently, the document shepherding process includes follow-up
+work during all document-processing stages after Working Group Last
+Call, i.e., during AD Evaluation of a document, during IESG
+Evaluation, and during post-approval processing by IANA and the RFC
+Editor.  In these stages, it is the responsibility of the Document
+Shepherd to track and follow up on feedback received on a document
+from all relevant parties.<a href="#section-1-4" class="pilcrow">¶</a></p>
+<p id="section-1-5">The Document Shepherd is usually a chair of the working group that
+has produced the document.  In consultation with the Responsible Area
+Director, the chairs may instead decide to appoint the working group
+secretary as the responsible Document Shepherd.<a href="#section-1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="conventions-and-definitions">
+<div id="sect-2">
 <section id="section-2">
-      <h2 id="name-conventions-and-definitions">
-<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-conventions-and-definitions" class="section-name selfRef">Conventions and Definitions</a>
+      <h2 id="name-terminology">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-terminology" class="section-name selfRef">Terminology</a>
       </h2>
 <p id="section-2-1">The key words "<span class="bcp14">MUST</span>", "<span class="bcp14">MUST NOT</span>", "<span class="bcp14">REQUIRED</span>", "<span class="bcp14">SHALL</span>", "<span class="bcp14">SHALL NOT</span>", "<span class="bcp14">SHOULD</span>", "<span class="bcp14">SHOULD NOT</span>", "<span class="bcp14">RECOMMENDED</span>", "<span class="bcp14">NOT RECOMMENDED</span>",
 "<span class="bcp14">MAY</span>", and "<span class="bcp14">OPTIONAL</span>" in this document are to be interpreted as
@@ -1196,43 +1289,889 @@ described in BCP 14 <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</s
 appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="security-considerations">
+<div id="sect-3">
 <section id="section-3">
-      <h2 id="name-security-considerations">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      <h2 id="name-process-description">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-process-description" class="section-name selfRef">Process Description</a>
       </h2>
-<p id="section-3-1">TODO Security<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">The document shepherding process consists of the following tasks:<a href="#section-3-1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3-2.1">Providing the Document Shepherd Write-Up accompanying a document
+that is forwarded to the IESG when publication is requested, as
+described in <a href="#sect-3.1" class="auto internal xref">Section 3.1</a>.<a href="#section-3-2.1" class="pilcrow">¶</a>
+</li>
+        <li class="normal" id="section-3-2.2">During AD Evaluation of the document by the Responsible Area
+Director, managing the discussion between the editors, the working
+group, and the Responsible Area Director, as described in <a href="#sect-3.2" class="auto internal xref">Section 3.2</a>.<a href="#section-3-2.2" class="pilcrow">¶</a>
+</li>
+        <li class="normal" id="section-3-2.3">During an IETF Last Call, if performed for the shepherded
+document, following up on community feedback and review comments.<a href="#section-3-2.3" class="pilcrow">¶</a>
+</li>
+        <li class="normal" id="section-3-2.4">During IESG Evaluation, following up on all IESG feedback
+("DISCUSS" and "COMMENT" items) related to the shepherded
+document, as described in <a href="#sect-3.3" class="auto internal xref">Section 3.3</a>.<a href="#section-3-2.4" class="pilcrow">¶</a>
+</li>
+        <li class="normal" id="section-3-2.5">Following up on IANA and RFC Editor requests as described in <a href="#sect-4" class="auto internal xref">Section 4</a> and <a href="#sect-5" class="auto internal xref">Section 5</a>.<a href="#section-3-2.5" class="pilcrow">¶</a>
+</li>
+      </ul>
+<p id="section-3-3">The shepherd must keep the document moving forward, communicating
+about it with parties who review and comment on it.  The shepherd
+must obtain the working group's consensus for any substantive
+proposed changes.  The shepherd is the leader for the document and
+for the working group, and maintains a critical and technical
+perspective.  In summary, the Document Shepherd continues to care for
+a shepherded document during its post-WG lifetime just as he or she
+has done while responsible for the document in the working group.<a href="#section-3-3" class="pilcrow">¶</a></p>
+<p id="section-3-4">Before any document shepherding takes place, a single Document
+Shepherd <span class="bcp14">MUST</span> be identified for a document (he or she will be named
+in the Document Shepherd Write-Up).  Frequently, the chairs and the
+Responsible Area Director will decide that the working group will
+adopt the PROTO process for all their future documents.  After that
+decision, the chairs, in consultation with the Responsible Area
+Director, decide on who should act as Document Shepherd for any given
+document.  This is typically and by default one of the chairs of the
+working group.  In consultation with the Responsible Area Director,
+the chairs <span class="bcp14">MAY</span> also decide to appoint the working group secretary as
+Document Shepherd for a given document.  The Document Shepherd <span class="bcp14">SHOULD NOT</span> be an editor of the shepherded document.<a href="#section-3-4" class="pilcrow">¶</a></p>
+<p id="section-3-5">It is intended that the Document Shepherd role be filled by one
+person during the entire shepherding process.  However, situations
+may occur when the Document Shepherd role may be reassigned to
+different persons during the lifetime of a document.  It is up to the
+chairs and Responsible Area Director to identify situations when this
+may become necessary, and then consult to appoint a new Document
+Shepherd.<a href="#section-3-5" class="pilcrow">¶</a></p>
+<p id="section-3-6">It is important to note that the document shepherding process only
+applies to documents that are the product of a working group.  It
+does not apply to documents that originate elsewhere.  Additionally,
+<a href="#sect-6" class="auto internal xref">Section 6</a> discusses other instances in which the document shepherding
+process does not apply.<a href="#section-3-6" class="pilcrow">¶</a></p>
+<div id="sect-3.1">
+<section id="section-3.1">
+        <h3 id="name-document-shepherd-write-up">
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-document-shepherd-write-up" class="section-name selfRef">Document Shepherd Write-Up</a>
+        </h3>
+<p id="section-3.1-1">When a working group decides that a document is ready for submission
+to the IESG for publication, it is the task of the Document Shepherd
+to complete a "Document Shepherd Write-Up" for the document.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">There are two parts to this task.  First, the Document Shepherd
+answers questions (1.a) to (1.j) below to give the Responsible Area
+Director insight into the working group process that applied to this
+document.  Note that while these questions may appear redundant in
+some cases, they are written to elicit information that the
+Responsible Area Director must be aware of (to this end, pointers to
+relevant entries in the WG archive are helpful).  The goal here is to
+inform the Responsible Area Director about any issues that may have
+come up in IETF meetings, on the mailing list, or in private
+communication that they should be aware of prior to IESG Evaluation
+of the shepherded document.  Any significant issues mentioned in the
+questionnaire will probably lead to a follow-up discussion with the
+Responsible Area Director.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1-3">The second part of the task is to prepare the "Document Announcement Write-Up"
+that is input both to the ballot for the IESG telechat and
+to the eventual IETF-wide announcement message.  Item number (1.k)
+describes the elements of the Document Announcement Write-Up.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.1-4">Some examples of Document Announcement Write-Ups are included in
+Appendix A, and there are many more examples with subject lines such
+as "Protocol Action" and "Document Action" in the IETF-announce
+mailing list archive.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
+<p id="section-3.1-5">The initial template for the Document Shepherd Write-Up is included
+below, but changes are expected over time.  The latest version of
+this template is available from the IESG section of the IETF web
+site.<a href="#section-3.1-5" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-3.1-6">
+          <dt id="section-3.1-6.1">(1.a)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.2">
+            <p id="section-3.1-6.2.1">Who is the Document Shepherd for this document?  Has the
+Document Shepherd personally reviewed this version of the
+document and, in particular, does he or she believe this
+version is ready for forwarding to the IESG for publication?<a href="#section-3.1-6.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.3">(1.b)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.4">
+            <p id="section-3.1-6.4.1">Has the document had adequate review both from key WG members
+and from key non-WG members?  Does the Document Shepherd have
+any concerns about the depth or breadth of the reviews that
+have been performed?<a href="#section-3.1-6.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.5">(1.c)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.6">
+            <p id="section-3.1-6.6.1">Does the Document Shepherd have concerns that the document
+needs more review from a particular or broader perspective,
+e.g., security, operational complexity, someone familiar with
+AAA, internationalization, or XML?<a href="#section-3.1-6.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.7">(1.d)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.8">
+            <p id="section-3.1-6.8.1">Does the Document Shepherd have any specific concerns or
+issues with this document that the Responsible Area Director
+and/or the IESG should be aware of?  For example, perhaps he
+or she is uncomfortable with certain parts of the document, or
+has concerns whether there really is a need for it.  In any
+event, if the WG has discussed those issues and has indicated
+that it still wishes to advance the document, detail those
+concerns here.  Has an IPR disclosure related to this document
+been filed?  If so, please include a reference to the
+disclosure and summarize the WG discussion and conclusion on
+this issue.<a href="#section-3.1-6.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.9">(1.e)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.10">
+            <p id="section-3.1-6.10.1">How solid is the WG consensus behind this document?  Does it
+represent the strong concurrence of a few individuals, with
+others being silent, or does the WG as a whole understand and
+agree with it?<a href="#section-3.1-6.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.11">(1.f)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.12">
+            <p id="section-3.1-6.12.1">Has anyone threatened an appeal or otherwise indicated extreme
+discontent?  If so, please summarize the areas of conflict in
+separate email messages to the Responsible Area Director.  (It
+should be in a separate email because this questionnaire is
+entered into the ID Tracker.)<a href="#section-3.1-6.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.13">(1.g)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.14">
+            <p id="section-3.1-6.14.1">Has the Document Shepherd personally verified that the
+document satisfies all ID nits?  (See <span><a href="http://www.ietf.org/ID-Checklist.html">http://www.ietf.org/ID-Checklist.html</a></span>
+and <span><a href="http://tools.ietf.org/tools/idnits/.">http://tools.ietf.org/tools/idnits/.</a></span>)  Boilerplate checks are
+not enough; this check needs to be thorough.  Has the document
+met all formal review criteria it needs to, such as the MIB
+Doctor, media type, and URI type reviews?  If the document
+does not already indicate its intended status at the top of
+the first page, please indicate the intended status here.<a href="#section-3.1-6.14.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.15">(1.h)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.16">
+            <p id="section-3.1-6.16.1">Has the document split its references into normative and
+informative?  Are there normative references to documents that
+are not ready for advancement or are otherwise in an unclear
+state?  If such normative references exist, what is the
+strategy for their completion?  Are there normative references
+that are downward references, as described in <span>[<a href="#RFC3967" class="cite xref">RFC3967</a>]</span>?  If
+so, list these downward references to support the Area
+Director in the Last Call procedure for them <span>[<a href="#RFC3967" class="cite xref">RFC3967</a>]</span>.<a href="#section-3.1-6.16.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.17">(1.i)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.18">
+            <p id="section-3.1-6.18.1">Has the Document Shepherd verified that the document's IANA
+Considerations section exists and is consistent with the body
+of the document?  If the document specifies protocol
+extensions, are reservations requested in appropriate IANA
+registries?  Are the IANA registries clearly identified?  If
+the document creates a new registry, does it define the
+proposed initial contents of the registry and an allocation
+procedure for future registrations?  Does it suggest a
+reasonable name for the new registry?  See <span>[<a href="#RFC2434" class="cite xref">RFC2434</a>]</span>.  If the
+document describes an Expert Review process, has the Document
+Shepherd conferred with the Responsible Area Director so that
+the IESG can appoint the needed Expert during IESG Evaluation?<a href="#section-3.1-6.18.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.19">(1.j)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.20">
+            <p id="section-3.1-6.20.1">Has the Document Shepherd verified that sections of the
+document that are written in a formal language, such as XML
+code, BNF rules, MIB definitions, etc., validate correctly in
+an automated checker?<a href="#section-3.1-6.20.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.1-6.21">(1.k)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.1-6.22">
+            <p id="section-3.1-6.22.1">The IESG approval announcement includes a Document
+Announcement Write-Up.  Please provide such a Document
+Announcement Write-Up.  Recent examples can be found in the
+"Action" announcements for approved documents.  The approval
+announcement contains the following sections:<a href="#section-3.1-6.22.1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlNewline" id="section-3.1-6.22.2">
+              <dt id="section-3.1-6.22.2.1">Technical Summary</dt>
+              <dd style="margin-left: 1.5em" id="section-3.1-6.22.2.2">
+                <p id="section-3.1-6.22.2.2.1">Relevant content can frequently be found in the abstract
+and/or introduction of the document.  If not, this may be
+an indication that there are deficiencies in the abstract
+or introduction.<a href="#section-3.1-6.22.2.2.1" class="pilcrow">¶</a></p>
+</dd>
+              <dd class="break"></dd>
+<dt id="section-3.1-6.22.2.3">Working Group Summary</dt>
+              <dd style="margin-left: 1.5em" id="section-3.1-6.22.2.4">
+                <p id="section-3.1-6.22.2.4.1">Was there anything in the WG process that is worth noting?
+For example, was there controversy about particular points
+or were there decisions where the consensus was
+particularly rough?<a href="#section-3.1-6.22.2.4.1" class="pilcrow">¶</a></p>
+</dd>
+              <dd class="break"></dd>
+<dt id="section-3.1-6.22.2.5">Document Quality</dt>
+              <dd style="margin-left: 1.5em" id="section-3.1-6.22.2.6">
+                <p id="section-3.1-6.22.2.6.1">Are there existing implementations of the protocol?  Have a
+significant number of vendors indicated their plan to
+implement the specification?  Are there any reviewers that
+merit special mention as having done a thorough review,
+e.g., one that resulted in important changes or a
+conclusion that the document had no substantive issues?  If
+there was a MIB Doctor, Media Type, or other Expert Review,
+what was its course (briefly)?  In the case of a Media Type
+Review, on what date was the request posted?<a href="#section-3.1-6.22.2.6.1" class="pilcrow">¶</a></p>
+</dd>
+              <dd class="break"></dd>
+<dt id="section-3.1-6.22.2.7">Personnel</dt>
+              <dd style="margin-left: 1.5em" id="section-3.1-6.22.2.8">
+                <p id="section-3.1-6.22.2.8.1">Who is the Document Shepherd for this document?  Who is the
+Responsible Area Director?  If the document requires IANA
+experts(s), insert 'The IANA Expert(s) for the registries
+in this document are &lt;TO BE ADDED BY THE AD&gt;.'<a href="#section-3.1-6.22.2.8.1" class="pilcrow">¶</a></p>
+</dd>
+            <dd class="break"></dd>
+</dl>
+</dd>
+        <dd class="break"></dd>
+</dl>
+<p id="section-3.1-7">The Document Shepherd <span class="bcp14">MUST</span> send the Document Shepherd Write-Up to the
+Responsible Area Director and iesg-secretary@ietf.org together with
+the request to publish the document.  The Document Shepherd <span class="bcp14">SHOULD</span>
+also send the entire Document Shepherd Write-Up to the working group
+mailing list.  If the Document Shepherd feels that information which
+may prove to be sensitive, may lead to possible appeals, or is
+personal needs to be written up, it <span class="bcp14">SHOULD</span> be sent in direct email to
+the Responsible Area Director, because the Document Shepherd Write-Up
+is published openly in the ID Tracker.  Question (1.f) of the
+Write-Up covers any material of this nature and specifies this more
+confidential handling.<a href="#section-3.1-7" class="pilcrow">¶</a></p>
+<p id="section-3.1-8">The Document Shepherd Write-Up is entered into the ID Tracker
+<span>[<a href="#IDTRACKER" class="cite xref">IDTRACKER</a>]</span> as a "Comment".  The name and email address of the
+Document Shepherd are entered into the ID Tracker, currently as a
+"Brief Note" (this may change in the future).  The email address of
+the Document Shepherd <span class="bcp14">MUST</span> also be added to the "State or Version Change
+Notice To" field (typically the email addresses of all working
+group chairs, authors, and the secretary will be added).<a href="#section-3.1-8" class="pilcrow">¶</a></p>
+<p id="section-3.1-9">Entering the name and email of the Document Shepherd into the ID
+Tracker is <span class="bcp14">REQUIRED</span> to ensure that he or she will be copied on the
+email exchange between the editors, chairs, the IESG, the IESG
+secretariat, IANA, and the RFC Editor during the review and approval
+process.  There are still manual steps required for these parties to
+ensure that they include the Document Shepherd, but it is hoped that
+in the future, automated tools will ensure that Document Shepherds
+(and others) receive necessary communications.<a href="#section-3.1-9" class="pilcrow">¶</a></p>
+<p id="section-3.1-10">The contact information for the Document Shepherd is also important
+for the Gen-ART team <span>[<a href="#GEN-ART" class="cite xref">GEN-ART</a>]</span>, area directorates, and other review
+teams, so they can know to whom to address reviews, in addition to
+the Responsible Area Director.<a href="#section-3.1-10" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="iana-considerations">
+<div id="sect-3.2">
+<section id="section-3.2">
+        <h3 id="name-document-shepherding-during">
+<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-document-shepherding-during" class="section-name selfRef">Document Shepherding during AD Evaluation</a>
+        </h3>
+<p id="section-3.2-1">The steps for document shepherding during AD Evaluation are as
+follows:<a href="#section-3.2-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-3.2-2">
+          <dt id="section-3.2-2.1">(2.a)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.2">
+            <p id="section-3.2-2.2.1">The Responsible Area Director reads, evaluates, and comments
+on the document, as is the case when not using the document
+shepherding process.  If the Responsible Area Director
+determines that the document is ready for IESG Evaluation, he
+or she indicates this to the Document Shepherd and the
+document shepherding process continues as described in <a href="#sect-3.3" class="auto internal xref">Section 3.3</a>.<a href="#section-3.2-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.3">(2.b)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.4">
+            <p id="section-3.2-2.4.1">If the Responsible Area Director has identified issues with a
+document that must be addressed before IESG Evaluation can
+commence, he or she sends a full evaluation to the Document
+Shepherd and <span class="bcp14">SHOULD</span> also enter the review into the ID Tracker.<a href="#section-3.2-2.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.5">(2.c)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.6">
+            <p id="section-3.2-2.6.1">The Document Shepherd reads the AD Evaluation comments, making
+very certain that all comments are understood, so that it is
+possible to follow up on them with the editors and working
+group.  If there is some uncertainty as to what is requested,
+this <span class="bcp14">SHOULD</span> be resolved with the Responsible Area Director.<a href="#section-3.2-2.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.7">(2.d)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.8">
+            <p id="section-3.2-2.8.1">The Document Shepherd sends the AD Evaluation comments to the
+editors and to the working group mailing list, in order to
+have a permanent record of the comments.  It is <span class="bcp14">RECOMMENDED</span>
+that the Document Shepherd solicit from the editors an
+estimate on when the required changes will be completed and a
+revised document can be expected.  Working groups that use
+issue tracking <span class="bcp14">SHOULD</span> also record the issues (and eventually
+their resolution) in their issue tracker.<a href="#section-3.2-2.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.9">(2.e)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.10">
+            <p id="section-3.2-2.10.1">During the production of a revised document that addresses the
+AD Evaluation comments, it is <span class="bcp14">RECOMMENDED</span> that the editors
+keep a list showing how each comment was addressed and what
+the revised text is.  It is <span class="bcp14">RECOMMENDED</span> that this list be
+forwarded to the Responsible Area Director together with the
+revised document.<a href="#section-3.2-2.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.11">(2.f)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.12">
+            <p id="section-3.2-2.12.1">In the event that the editors or working group disagrees with
+a comment raised by the Responsible Area Director or has
+previously considered and dismissed the issue, the Document
+Shepherd <span class="bcp14">MUST</span> resolve the issue with the Responsible Area
+Director before a revised document can be submitted.<a href="#section-3.2-2.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.13">(2.g)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.14">
+            <p id="section-3.2-2.14.1">The Document Shepherd iterates with the editors (and working
+group, if required) until all outstanding issues have been
+resolved and a revised document is available.  At this point,
+the Document Shepherd notifies the Responsible Area Director
+and provides him or her with the revised document, the summary
+of issues, and the resulting text changes.<a href="#section-3.2-2.14.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.15">(2.h)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.16">
+            <p id="section-3.2-2.16.1">The Responsible Area Director verifies that the issues he or
+she found during AD Evaluation are resolved in the revised
+version of the document by starting the process described in
+this section at step (2.a).<a href="#section-3.2-2.16.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.2-2.17">(2.i)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.2-2.18">
+            <p id="section-3.2-2.18.1">If the document underwent an IETF Last Call and the AD
+concludes that significant issues were raised during the Last
+Call, then steps (2.b) through (2.h) need to be applied
+addressing the Last Call issues.  This requires the
+Responsible Area Director to present to the Document Shepherd
+those Last Call issues raised only to the IESG.<a href="#section-3.2-2.18.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+</section>
+</div>
+<div id="sect-3.3">
+<section id="section-3.3">
+        <h3 id="name-document-shepherding-during-">
+<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-document-shepherding-during-" class="section-name selfRef">Document Shepherding during IESG Evaluation</a>
+        </h3>
+<p id="section-3.3-1">During IESG Evaluation of a document, ADs can bring forward two kinds
+of remarks about a document: DISCUSS items and COMMENT items.  A
+DISCUSS blocks a document's approval process until it has been
+resolved; a COMMENT does not.  This section details the steps that a
+Document Shepherd takes to resolve any DISCUSS and COMMENT items
+brought forward against a shepherded document during IESG Evaluation.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3-2">Note that DISCUSS and COMMENT items are occasionally written in a
+manner that makes their intent unclear.  In these cases, the Document
+Shepherd <span class="bcp14">SHOULD</span> start a discussion with the ADs who brought the items
+up to clarify their intent, keeping the Responsible Area Director
+informed.  If this fails to clarify the intent, the Responsible Area
+Director may need to work towards a clarification inside the IESG.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-3.3-3">
+          <dt id="section-3.3-3.1">(3.a)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.2">
+            <p id="section-3.3-3.2.1">Leading up to the IESG conference call, the Document Shepherd
+may see emails about the document from directorate reviewers
+on behalf of one or more ADs and also emailed copies of
+DISCUSS and COMMENT items entered into the ID Tracker.  The
+Document Shepherd <span class="bcp14">SHOULD</span> immediately begin to work on
+resolving DISCUSS and COMMENT items with the ADs who have
+raised them, keeping the Responsible Area Director copied on
+the email exchange, so that he or she is able to support the
+activity during the conference call.  When dealing with
+directorate reviews, the Document Shepherd <span class="bcp14">MUST</span> involve the
+ADs to whom these directorates report to ensure that these ADs
+consider the review comments that need resolving.<a href="#section-3.3-3.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.3">(3.b)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.4">
+            <p id="section-3.3-3.4.1">Immediately following the conference call, when the document
+changes state from the "IESG Evaluation" state to one of the
+states requiring Document Shepherd action, e.g., "IESG Evaluation: Revised
+ID Needed" or "IESG Evaluation: AD Followup", the Document Shepherd will
+receive email.  A state
+of "AD Followup" typically signifies the Responsible Area
+Director's hope that a resolution may be possible through a
+continued discussion or (more usually) through a small set of
+changes as "Notes to the RFC Editor".<a href="#section-3.3-3.4.1" class="pilcrow">¶</a></p>
+<p id="section-3.3-3.4.2">Note that there may be very exceptional cases when DISCUSS
+items are registered after an IESG conference call.  In these
+cases, the AD who has raised the DISCUSS <span class="bcp14">MUST</span> notify the
+Document Shepherd about it.  (The notification facility in the
+ID Tracker is very convenient for this purpose and also for
+the cases where the DISCUSS and COMMENT items are updated
+after they are partially resolved.)<a href="#section-3.3-3.4.2" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.5">(3.c)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.6">
+            <p id="section-3.3-3.6.1">The Document Shepherd then queries the ID Tracker to collect
+the remaining DISCUSS and COMMENT items raised against the
+document.  The Document Shepherd analyzes these items and
+initializes contact with the ADs who have placed them.  The
+Responsible Area Director <span class="bcp14">MUST</span> be copied on all correspondence
+related to active DISCUSS or COMMENT items.  This does not
+place the Responsible Area Director in the critical path
+towards a resolution, but should keep him or her informed
+about the state of the discussion.<a href="#section-3.3-3.6.1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-3.3-3.6.2">
+<pre>
++-------+              +-------+               +-------+
+| (3.b) | -----------&gt; | (3.c) | ------------&gt; | (3.d) |
++-------+  Comments    +-------+   Comments    +-------+
+           collected    /|\  |    understood
+                         |   |
+                         |   | Comments not fully understood
+                         |   | (Further AD/Document Shepherd
+                         |   |  discussion required)
+                         +---+
+</pre><a href="#section-3.3-3.6.2" class="pilcrow">¶</a>
+</div>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.7">(3.d)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.8">
+            <p id="section-3.3-3.8.1">The Document Shepherd then coordinates the resolution of
+DISCUSS and COMMENT items and builds a consistent
+interpretation of the comments.  This step is similar to much
+of the process described in <a href="#sect-3.2" class="auto internal xref">Section 3.2</a>.<a href="#section-3.3-3.8.1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-3.3-3.8.2">
+<pre>
++-------+                  +-------+
+| (3.c) | ---------------&gt; | (3.d) |
++-------+    Consistent    +-------+
+   /|\     interpretation      |
+    |                          | Further AD/Document Shepherd
+    |                          | discussion required
+    +--------------------------+
+</pre><a href="#section-3.3-3.8.2" class="pilcrow">¶</a>
+</div>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.9">(3.e)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.10">
+            <p id="section-3.3-3.10.1">The Document Shepherd then communicates the DISCUSS and
+COMMENT items to the document editors and the working group,
+alerting them of any changes to the document that have
+accumulated during IESG processing, such as "Notes to the RFC Editor".  If
+any changes will be substantive, the Document
+Shepherd, in consultation with the Responsible Area Director,
+as during other stages, <span class="bcp14">MUST</span> confirm working group consensus
+or sometimes even IETF consensus.<a href="#section-3.3-3.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.11">(3.f)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.12">
+            <p id="section-3.3-3.12.1">After the editors resolve the DISCUSS and COMMENT items, the
+Document Shepherd reviews the resulting new version of the
+document, which will be a revised document, a set of "Notes to the RFC Editor",
+or both, using his or her technical expertise
+to ensure that all raised DISCUSS and COMMENT issues have been
+resolved.<a href="#section-3.3-3.12.1" class="pilcrow">¶</a></p>
+<p id="section-3.3-3.12.2">Note that the Document Shepherd <span class="bcp14">MAY</span> also suggest resolutions
+to DISCUSS and COMMENT items, enter them into an issue
+tracker, or perform other steps to streamline the resolution
+of the evaluation comments.  It is very important to resolve
+the comments in a timely way, while the discussion is current
+for everyone involved.<a href="#section-3.3-3.12.2" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.13">(3.g)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.14">
+            <p id="section-3.3-3.14.1">When the Document Shepherd is satisfied that the revised
+document addresses the evaluation comments, he or she
+communicates the resolution to the Responsible Area Director
+and the ADs that had raised the DISCUSS and COMMENT items.<a href="#section-3.3-3.14.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.15">(3.h)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.16">
+            <p id="section-3.3-3.16.1">Each AD who had raised a DISCUSS checks whether the
+communicated resolution addresses his or her items.  If it
+does, the AD will clear the DISCUSS.  If it does not, the AD
+notifies the Document Shepherd and adds information to the ID
+Tracker explaining why the DISCUSS was not resolved.  The
+Document Shepherd informs the working group accordingly.
+(COMMENT items need not be checked and cleared, because they
+do not block the document, but ADs are encouraged to do so.)<a href="#section-3.3-3.16.1" class="pilcrow">¶</a></p>
+<p id="section-3.3-3.16.2">If a DISCUSS was not resolved to the satisfaction of the AD
+that has raised it or the Responsible Area Director, two
+possibilities exist:<a href="#section-3.3-3.16.2" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-3.3-3.16.3">
+              <dt id="section-3.3-3.16.3.1">(a)</dt>
+              <dd style="margin-left: 2.5em" id="section-3.3-3.16.3.2">
+                <p id="section-3.3-3.16.3.2.1">The process returns to step (3.d), or<a href="#section-3.3-3.16.3.2.1" class="pilcrow">¶</a></p>
+</dd>
+              <dd class="break"></dd>
+<dt id="section-3.3-3.16.3.3">(b)</dt>
+              <dd style="margin-left: 2.5em" id="section-3.3-3.16.3.4">
+                <p id="section-3.3-3.16.3.4.1">If no progress can be made on the resolution of the
+DISCUSS with the AD who has raised it, despite repeated
+clarifications and discussions, the Responsible Area
+Director should take over continued shepherding of the
+document.  Such a situation may be indicative of larger
+issues that the PROTO process was not designed to handle.<a href="#section-3.3-3.16.3.4.1" class="pilcrow">¶</a></p>
+</dd>
+            <dd class="break"></dd>
+</dl>
+<p id="section-3.3-3.16.4">Once the process above has cleared all DISCUSS items, document
+ shepherding continues with step (3.i).<a href="#section-3.3-3.16.4" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-3.3-3.17">(3.i)</dt>
+          <dd style="margin-left: 3.5em" id="section-3.3-3.18">
+            <p id="section-3.3-3.18.1">The Responsible Area Director moves the document to the
+"Approved - Announcement to be sent" state in the ID Tracker.
+If he or she deems the changes to the revised document
+significant, there may be a new WG Last Call, or possibly a
+new IETF Last Call.  The document goes through a new full IESG
+Evaluation process if there is a new IETF Last Call.<a href="#section-3.3-3.18.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+</section>
+</div>
+</section>
+</div>
+<div id="sect-4">
 <section id="section-4">
-      <h2 id="name-iana-considerations">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+      <h2 id="name-shepherding-the-documents-i">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-shepherding-the-documents-i" class="section-name selfRef">Shepherding the Document's IANA Actions</a>
       </h2>
-<p id="section-4-1">This document has no IANA actions.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-4-1">IETF working group documents often include considerations requiring
+actions by the IANA, such as creating a new registry or adding
+information to an existing registry, perhaps after consulting an
+IESG-appointed Expert.  Sometimes the Document Shepherd must keep
+track of certain IANA actions to be completed by the IESG, such as
+ratifying the appointment of a designated Expert called for in the
+IANA Considerations.  IANA-related processing may also include a
+specified type of Expert review, such as review of proposed MIME
+media types on the designated ietf-types mailing list.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-4-2">The IANA reviews IETF documents and requests responses at any or all
+of the following times: in response to IETF Last Call, during the
+IESG Evaluation review of the document, and at the time when the IANA
+performs actions in its web-based registry for the document, usually
+but not always after IESG approval of the document.  More details of
+the IANA process and IETF interaction are found in <span>[<a href="#RFC2434" class="cite xref">RFC2434</a>]</span>.<a href="#section-4-2" class="pilcrow">¶</a></p>
+<p id="section-4-3">At the time of this publication, RFC 2434 is under revision <span>[<a href="#RFC2434bis" class="cite xref">RFC2434bis</a>]</span>,
+and the updates are and will be of value to the
+Document Shepherd.  Note that the Document Shepherd <span class="bcp14">MUST</span> determine
+(by individual review and consultation with others) what is the most
+recent and the most applicable IANA information and guidance for his
+or her document, be it the overall guidance, or external documents in
+his or her area, or in other areas.  An example of an external
+document is <span>[<a href="#RFC4020" class="cite xref">RFC4020</a>]</span>.<a href="#section-4-3" class="pilcrow">¶</a></p>
+<p id="section-4-4">Whenever an IANA request comes, during whatever phase of the
+shepherding process, the requester from IANA <span class="bcp14">MUST</span> ensure that the
+Document Shepherd and the Responsible Area Director both receive the
+request.  The Document Shepherd is responsible for responding as
+rapidly as possible.  He or she should discuss requests that
+introduce any possible concerns with the working group.  The Document
+Shepherd and the Responsible Area Director may decide in consultation
+that an IANA request leads to a change that needs additional review
+or approval.<a href="#section-4-4" class="pilcrow">¶</a></p>
+<p id="section-4-5">In general, the Document Shepherd ensures that the IANA process
+completes, checks that the registry is correct and that the IANA
+Matrix (<span><a href="http://www.iana.org/numbers.html">http://www.iana.org/numbers.html</a></span>) is complete and consistent,
+and troubleshoots when all is not well.  At the end of IANA
+processing, the Document Shepherd should be sure that the RFC Editor
+has acknowledged IANA conclusion, i.e., that the handoff has been
+made.<a href="#section-4-5" class="pilcrow">¶</a></p>
+<p id="section-4-6">In summary, the task of shepherding the IANA actions is often
+overlooked, but is as important to coordinate and manage as all the
+other document reviews the Document Shepherd has managed.  As with
+those, the Document Shepherd contributes greatly to quality and
+timeliness of the document by effective and responsive shepherding of
+the IANA requests.<a href="#section-4-6" class="pilcrow">¶</a></p>
 </section>
 </div>
+<div id="sect-5">
 <section id="section-5">
-      <h2 id="name-normative-references">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+      <h2 id="name-document-shepherding-after-">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-document-shepherding-after-" class="section-name selfRef">Document Shepherding after IESG Approval</a>
       </h2>
+<p id="section-5-1">After the IESG Evaluation and resolution described in <a href="#sect-3.3" class="auto internal xref">Section 3.3</a>,
+the IESG approves the document, and the Responsible Area Director
+uses the ID Tracker to ask for any final changes to the Document
+Announcement Write-Up and for it to be issued.  The Document Shepherd
+may have some edits for the Responsible Area Director, such as minor
+"Notes to the RFC Editor", and this is the time to consult and
+provide them.<a href="#section-5-1" class="pilcrow">¶</a></p>
+<p id="section-5-2">The IESG approval announcement goes to the general community and to
+the RFC Editor, and now the Document Shepherd (identified in the
+Announcement Write-Up) continues to shepherd the document through its
+technical publication.  The RFC Editor currently makes a number of
+types of requests to the authors, Document Shepherd and Responsible
+Area Director.  The Document Shepherd <span class="bcp14">SHOULD</span> lead in responding to
+the RFC Editor and shepherd the document during the post-approval
+period to its publication.<a href="#section-5-2" class="pilcrow">¶</a></p>
+<p id="section-5-3">The RFC Editor request types include: editorial queries about
+dangling or missing informative and normative citations (good
+shepherding should try to catch these earlier, but they happen);
+requests for the document source (e.g., XML or nroff); occasional
+technical comments; and copy-edits for review and close scrutiny by
+the authors (AUTH48).  For the latter, the Document Shepherd <span class="bcp14">SHOULD</span>
+lead in checking that copy-edits have in no case affected a consensus
+wording of the working group that prepared the document, and <span class="bcp14">SHOULD</span>
+bring speed to this checking by multiple coauthors.  The Document
+Shepherd also consults with the Responsible Area Director on
+reviewing proposed post-approval changes to the document by any
+author.  These may require Area Director approval, and they often
+need to be presented to the working group for consent if not a full
+consensus procedure.<a href="#section-5-3" class="pilcrow">¶</a></p>
+<p id="section-5-4">As in other phases of document shepherding, the Document Shepherd
+provides attentiveness and timeliness by serving as the informed
+representative of the document and helping its advancement and its
+integrity.<a href="#section-5-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="sect-6">
+<section id="section-6">
+      <h2 id="name-when-not-to-use-the-documen">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-when-not-to-use-the-documen" class="section-name selfRef">When Not to Use the Document Shepherding Process</a>
+      </h2>
+<p id="section-6-1">As mentioned in <a href="#sect-3" class="auto internal xref">Section 3</a>, the Document Shepherd <span class="bcp14">SHOULD NOT</span> be an
+editor of the shepherded document.  If this cannot be avoided by
+making another working group chair or secretary the Document
+Shepherd, the document shepherding process <span class="bcp14">SHOULD NOT</span> be used.  There
+are several other cases in which the document shepherding process
+<span class="bcp14">SHOULD NOT</span> be used.  These include:<a href="#section-6-1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-6-2">
+<li id="section-6-2.1">Cases where the Document Shepherd is the primary author or editor
+  of a large percentage of the documents produced by the working
+  group.<a href="#section-6-2.1" class="pilcrow">¶</a>
+</li>
+        <li id="section-6-2.2">Cases where the Responsible Area Director expects communication
+  difficulties with the Document Shepherd (either due to
+  experience, strong views stated by the Document Shepherd, or
+  other issues).<a href="#section-6-2.2" class="pilcrow">¶</a>
+</li>
+        <li id="section-6-2.3">Cases where the working group itself is either very old, losing
+  energy, or winding down (i.e., cases where it would not be
+  productive to initiate new processes or procedures).<a href="#section-6-2.3" class="pilcrow">¶</a>
+</li>
+      </ol>
+<p id="section-6-3">Finally, note that other cases exist in which using the document
+shepherding process may not be productive.  The final determination
+as to whether or not to use the document shepherding process is left
+to the Responsible Area Director.  If the document shepherding
+process is not used, the Responsible Area Director acts as Document
+Shepherd, per the existing procedures of shepherding by Area
+Directors.<a href="#section-6-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="sect-7">
+<section id="section-7">
+      <h2 id="name-security-considerations">
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      </h2>
+<p id="section-7-1">This document specifies a change to IETF document-processing
+procedures.  As such, it neither raises nor considers protocol-
+specific security issues.<a href="#section-7-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="sect-8">
+<section id="section-8">
+      <h2 id="name-iana-considerations">
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+      </h2>
+<p id="section-8-1">This document creates no new requirements on IANA namespaces or other
+IANA requirements.<a href="#section-8-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="sect-9">
+<section id="section-9">
+      <h2 id="name-acknowledgments">
+<a href="#section-9" class="section-number selfRef">9. </a><a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
+      </h2>
+<p id="section-9-1">This document is the product of the PROTO team, which includes the
+authors as well as Bill Fenner, Barbara Fuller, and Margaret
+Wasserman.  Aaron Falk worked actively in PROTO until the start of
+2006 and worked on earlier versions of the document.<a href="#section-9-1" class="pilcrow">¶</a></p>
+<p id="section-9-2">The Document Shepherd Write-Up originated in an idea by John Klensin.
+Thomas Narten and Margaret Wasserman implemented it for the entire
+Internet Area, and their template was the basis of the version used
+today.<a href="#section-9-2" class="pilcrow">¶</a></p>
+<p id="section-9-3">Colin Perkins wrote the original Document Announcement Write-Up for
+draft-ietf-avt-rtp-midi-format included in Appendix A.1.  David Black
+wrote the original Document Announcement Write-Up for
+draft-ietf-imss-ip-over-fibre-channel included in Appendix A.2.  Both
+original announcements have been modified to reflect changes to the
+Document Announcement Write-Up template since they were written.<a href="#section-9-3" class="pilcrow">¶</a></p>
+<p id="section-9-4">Frank Ellermann and Olafur Gudmundsson have suggested improvements to
+the document during IETF Last Call.<a href="#section-9-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<section id="section-10">
+      <h2 id="name-references">
+<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-references" class="section-name selfRef">References</a>
+      </h2>
+<section id="section-10.1">
+        <h3 id="name-normative-references">
+<a href="#section-10.1" class="section-number selfRef">10.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+        </h3>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>
-      <dd>
+        <dd>
 <span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8174">[RFC8174]</dt>
-    <dd>
+      <dd>
 <span class="refAuthor">Leiba, B.</span>, <span class="refTitle">"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 8174</span>, <span class="seriesInfo">DOI 10.17487/RFC8174</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
-<div id="acknowledgments">
+<section id="section-10.2">
+        <h3 id="name-informative-references">
+<a href="#section-10.2" class="section-number selfRef">10.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+        </h3>
+<dl class="references">
+<dt id="GEN-ART">[GEN-ART]</dt>
+        <dd>
+<span class="refTitle">"The General Area Review Team (GEN-ART)"</span>, <span class="seriesInfo">Web Page: http://www.alvestrand.no/ietf/gen/review-guidelines.html</span>, <time datetime="2005" class="refDate">2005</time>. </dd>
+<dd class="break"></dd>
+<dt id="IDTRACKER">[IDTRACKER]</dt>
+        <dd>
+<span class="refTitle">"The IETF Internet-Draft Tracker"</span>, <span class="seriesInfo">Web Application: https://datatracker.ietf.org/</span>, <time datetime="2002" class="refDate">2002</time>. </dd>
+<dd class="break"></dd>
+<dt id="PROTO">[PROTO]</dt>
+        <dd>
+<span class="refTitle">"The IESG PROcess and TOols (PROTO) Team"</span>, <span class="seriesInfo">Web Page: http://psg.com/~mrw/PROTO-Team</span>, <time datetime="2004" class="refDate">2004</time>. </dd>
+<dd class="break"></dd>
+<dt id="RFC2434">[RFC2434]</dt>
+        <dd>
+<span class="refAuthor">Narten, T.</span> and <span class="refAuthor">H. Alvestrand</span>, <span class="refTitle">"Guidelines for Writing an IANA Considerations Section in RFCs"</span>, <span class="seriesInfo">RFC 2434</span>, <span class="seriesInfo">DOI 10.17487/RFC2434</span>, <time datetime="1998-10" class="refDate">October 1998</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2434">https://www.rfc-editor.org/rfc/rfc2434</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC2434bis">[RFC2434bis]</dt>
+        <dd>
+<span class="refAuthor">Narten, T.</span> and <span class="refAuthor">H. Alvestrand</span>, <span class="refTitle">"Guidelines for Writing an IANA Considerations Section in RFCs"</span>, <span class="seriesInfo">RFC 2434</span>, <span class="seriesInfo">DOI 10.17487/RFC2434</span>, <time datetime="1998-10" class="refDate">October 1998</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2434">https://www.rfc-editor.org/rfc/rfc2434</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC3967">[RFC3967]</dt>
+        <dd>
+<span class="refAuthor">Bush, R.</span> and <span class="refAuthor">T. Narten</span>, <span class="refTitle">"Clarifying when Standards Track Documents may Refer Normatively to Documents at a Lower Level"</span>, <span class="seriesInfo">BCP 97</span>, <span class="seriesInfo">RFC 3967</span>, <span class="seriesInfo">DOI 10.17487/RFC3967</span>, <time datetime="2004-12" class="refDate">December 2004</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc3967">https://www.rfc-editor.org/rfc/rfc3967</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC4020">[RFC4020]</dt>
+      <dd>
+<span class="refAuthor">Kompella, K.</span> and <span class="refAuthor">A. Zinin</span>, <span class="refTitle">"Early IANA Allocation of Standards Track Code Points"</span>, <span class="seriesInfo">RFC 4020</span>, <span class="seriesInfo">DOI 10.17487/RFC4020</span>, <time datetime="2005-02" class="refDate">February 2005</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc4020">https://www.rfc-editor.org/rfc/rfc4020</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+</dl>
+</section>
+</section>
+<div id="sect-a">
 <section id="appendix-A">
-      <h2 id="name-acknowledgments">
-<a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
+      <h2 id="name-example-document-announceme">
+<a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-example-document-announceme" class="section-name selfRef">Example Document Announcement Write-Ups</a>
       </h2>
-<p id="appendix-A-1">TODO acknowledge.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-1">This appendix includes two examples of Document Announcement Write-
+Ups.  Many more examples with Subject lines such as "Protocol Action"
+and "Document Action" can be found in the IETF-announce mailing list
+archive.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<div id="sect-a.1">
+<section id="appendix-A.1">
+        <h3 id="name-example-document-announcemen">
+<a href="#appendix-A.1" class="section-number selfRef">A.1. </a><a href="#name-example-document-announcemen" class="section-name selfRef">Example Document Announcement Write-Up for draft-ietf-avt-rtp-midi-format</a>
+        </h3>
+<span class="break"></span><dl class="dlNewline" id="appendix-A.1-1">
+          <dt id="appendix-A.1-1.1">Technical Summary</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.1-1.2">
+            <p id="appendix-A.1-1.2.1">These documents define the RTP Payload format for MIDI (Musical
+Instrument Digital Interface), and additional guidelines on
+implementation specifically concerning the timing of reception and
+transmission for best performance in different applications.  MIDI
+is a real-time media, which however is brittle to losses and
+errors.  Therefore the RTP payload format defines recovery
+journals as a way of avoiding persistent audible errors, and
+discusses congestion control handling for these journals.<a href="#appendix-A.1-1.2.1" class="pilcrow">¶</a></p>
+<p id="appendix-A.1-1.2.2">The RTP payload for MIDI encodes the broad range of MIDI commands.
+The format is suitable for interactive applications (such as
+network musical performance) and content-delivery (such as file
+streaming).<a href="#appendix-A.1-1.2.2" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="appendix-A.1-1.3">Working Group Summary</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.1-1.4">
+            <p id="appendix-A.1-1.4.1">There is consensus in the WG to publish these documents.<a href="#appendix-A.1-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="appendix-A.1-1.5">Document Quality</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.1-1.6">
+            <p id="appendix-A.1-1.6.1">This RTP Payload format has been implemented during the
+development of the specification and successfully tested over an
+IP network between two remote sites, thus showing that the
+technical solution is successfully working.  It has been reviewed
+by the MIDI Manufacturers Association and their comments have been
+addressed.<a href="#appendix-A.1-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="appendix-A.1-1.7">Personnel</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.1-1.8">
+            <p id="appendix-A.1-1.8.1">Magnus Westerlund and Colin Perkins jointly shepherded this
+document.  Allison Mankin reviewed the document for the IESG,
+including a careful review with the editor of the media types, in
+parallel with ietf-types list review requested on 2006-01-08,
+which raised no issues.<a href="#appendix-A.1-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+</section>
+</div>
+<div id="sect-a.2">
+<section id="appendix-A.2">
+        <h3 id="name-example-document-announcement">
+<a href="#appendix-A.2" class="section-number selfRef">A.2. </a><a href="#name-example-document-announcement" class="section-name selfRef">Example Document Announcement Write-Up for draft-ietf-imss-ip-over-fibre-channel</a>
+        </h3>
+<span class="break"></span><dl class="dlNewline" id="appendix-A.2-1">
+          <dt id="appendix-A.2-1.1">Technical Summary</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.2-1.2">
+            <p id="appendix-A.2-1.2.1">This document specifies the encapsulation of IPv6, IPv4 and ARP
+packets over Fibre Channel.  This document also specifies the
+methods for forming IPv6 link-local addresses and statelessly
+autoconfigured IPv6 addresses on Fibre Channel networks, and a
+mechanism to perform IPv4 address resolution over Fibre Channel
+networks.  This document (when published as RFC) obsoletes RFC2625
+and RFC3831.<a href="#appendix-A.2-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="appendix-A.2-1.3">Working Group Summary</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.2-1.4">
+            <p id="appendix-A.2-1.4.1">This document has been reviewed by Fibre Channel experts in
+Technical Committee T11 (Fibre Channel standards organization) in
+addition to members of the IMSS WG.  There is solid support for
+this document both in the WG and from T11.<a href="#appendix-A.2-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="appendix-A.2-1.5">Document Quality</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.2-1.6">
+            <p id="appendix-A.2-1.6.1">This document replaces and consolidates two separate RFCs on IPv4
+over Fibre Channel (RFC 2625) and IPv6 over Fibre Channel (RFC
+3831).  Most of its technical content is unchanged from those
+RFCs.  The technical changes that have been made are primarily
+based on implementation experience.<a href="#appendix-A.2-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="appendix-A.2-1.7">Personnel</dt>
+          <dd style="margin-left: 1.5em" id="appendix-A.2-1.8">
+            <p id="appendix-A.2-1.8.1">The protocol has been reviewed for the IESG by David L. Black (WG
+chair).  Bert Wijnen has reviewed this document for the IESG.  In
+addition, Brian Haberman has done a review for the INT Area as
+requested by WG-chair (David Black) via Margaret Wasserman.<a href="#appendix-A.2-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+</section>
+</div>
 </section>
 </div>
 <div id="authors-addresses">
