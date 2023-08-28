@@ -1,3 +1,4 @@
+----
 title: "Document Shepherding from Working Group Last Call to Publication"
 abbrev: "Document Shepherding to Publication"
 category: info
@@ -40,16 +41,14 @@ author:
   country: FI
   email: lars@eggert.org
   uri: "https://eggert.org/"
-  
+
 normative:
 
 informative:
 
-
 --- abstract
 
 TODO Abstract
-
 
 --- middle
 
@@ -57,21 +56,17 @@ TODO Abstract
 
 TODO Introduction
 
-
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
-
 
 # Security Considerations
 
 TODO Security
 
-
 # IANA Considerations
 
 This document has no IANA actions.
-
 
 --- back
 
