@@ -1,13 +1,11 @@
 ---
-
 title: "Document Shepherding from Working Group Last Call to Publication"
 abbrev: "Document Shepherding to Publication"
 category: info
-
 docname: draft-kumari-rfc4858bis-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
-number:
-date:
+# number:
+# date:
 consensus: true
 v: 3
 # area: AREA
@@ -25,23 +23,23 @@ venue:
   # latest: https://example.com/LATEST
 
 author:
-  -
-    name: Warren Kumari
-    organization: Google, LLC
-    email: warren@kumari.net
-  -
-    name: Allison Mankin
-    organization: Salesforce
-    email: allison.mankin@gmail.com
--
-  name: Lars Eggert
-  org: NetApp
-  street: Stenbergintie 12 B
-  city: Kauniainen
-  code: "02700"
-  country: FI
-  email: lars@eggert.org
-  uri: "https://eggert.org/"
+ -
+   name: Warren Kumari
+   organization: Google, LLC
+   email: warren@kumari.net
+ -
+   name: Allison Mankin
+   organization: Salesforce
+   email: allison.mankin@gmail.com
+ -
+   name: Lars Eggert
+   org: NetApp
+   street: Stenbergintie 12 B
+   city: Kauniainen
+   code: "02700"
+   country: FI
+   email: lars@eggert.org
+   uri: "https://eggert.org/"
 
 normative:
 
