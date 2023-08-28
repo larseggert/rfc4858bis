@@ -1,6 +1,7 @@
 {
   "default": true,
-  "MD029": {"style": "ordered" },
+  "MD013": {"headers": false},
+  "MD029": {"style": "one_or_ordered" },
   "MD031": false,
   "MD033": false,
   "MD034": false,
